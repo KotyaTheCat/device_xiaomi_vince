@@ -29,7 +29,7 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit from our common CAF device tree.
-include device/qcom/common/common.mk
+include device/qcom/sepolicy/sepolicy.mk
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64

@@ -377,7 +377,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Performance
-include vendor/qcom/common/qti-vendor.mk
+#include vendor/qcom/common/qti-vendor.mk
 
 # USB HAL
 PRODUCT_PACKAGES += \
