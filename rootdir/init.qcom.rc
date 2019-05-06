@@ -432,8 +432,8 @@ on property:vendor.radio.atfwd.start=false
 
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
-    restart vendor.camera-provider-2-4
-    restart vendor.audio-hal-2-0
+    stop vendor.camera-provider-2-4
+    start vendor.camera-provider-2-4
     start wcnss-service
 
 on property:persist.env.fastdorm.enabled=true
@@ -599,7 +599,7 @@ on property:ro.data.large_tcp_window_size=true
 service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
     class main
     user radio
-    group radio cache inet misc audio sdcard_r sdcard_rw diag log
+    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service charger /sbin/chargeonlymode
