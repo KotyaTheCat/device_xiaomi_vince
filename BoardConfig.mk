@@ -219,8 +219,8 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_USES_OLD_MNC_FORMAT := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-04-05
