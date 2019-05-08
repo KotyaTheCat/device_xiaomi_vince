@@ -178,8 +178,8 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0_vendor \
     vendor.display.config@1.1_vendor
 	
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#   WfdCommon
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -316,9 +316,9 @@ PRODUCT_PACKAGES += \
     libjson
 	
 #QTI performance
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
+#PRODUCT_BOOT_JARS += \
+#    QPerformance \
+#    UxPerformance
 	
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -353,7 +353,7 @@ PRODUCT_PACKAGES += \
     libxml2 \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Seccomp policy
