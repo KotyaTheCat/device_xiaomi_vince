@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
     AntHalService \
     antradio_app \
     libantradio
-	
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -149,7 +149,7 @@ PRODUCT_PACKAGES += \
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
-	
+
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.1 \
     vendor.display.config@1.0_vendor \
     vendor.display.config@1.1_vendor
-	
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
@@ -221,7 +221,7 @@ PRODUCT_COPY_FILES += \
 # Healthd
 PRODUCT_PACKAGES += \
     chargeonlymode
-	
+
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
@@ -264,6 +264,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.vince
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
@@ -297,7 +301,7 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-		
+
 # Xiaomi Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -315,12 +319,12 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-	
+
 #QTI performance
 PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
-	
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -386,7 +390,7 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     vndk-sp
-	
+
 # Thermal
 PRODUCT_PACKAGES += \
     thermal.msm8953
@@ -399,7 +403,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
-	
+
 # VR
 PRODUCT_PACKAGES += \
     vr.msm8953
@@ -425,7 +429,7 @@ PRODUCT_PACKAGES += \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
-	
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(LOCAL_PATH)/wifi/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
