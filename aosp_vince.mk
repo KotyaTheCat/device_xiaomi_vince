@@ -23,7 +23,6 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 
 #all
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 #(PE-CAF)
 $(call inherit-product, vendor/aosp/config/common.mk)
