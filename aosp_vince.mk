@@ -21,15 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common Evolution X stuff.
+# Inherit some common stuff.
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Maintainer props
-EVO_DONATE_URL := https://t.me/KotyaTheCat
-EVO_MAINTAINER := KotyaTheCat
-EVO_SUPPORT_URL := https://t.me/KotyaTheCat
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
